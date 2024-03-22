@@ -1,6 +1,7 @@
 # Lab 4 SPA
 Usage
 ``` bash
-make
-make flash
+make 
+make switches
+make GROUP=# TARGET=# target
 ```

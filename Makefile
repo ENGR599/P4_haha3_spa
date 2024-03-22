@@ -7,8 +7,8 @@ TARGET  	:=1
 setup:
 	gowin_driver on
 
-flash switches:
-	cd /l/gowin/Programmer/bin/; ./programmer_cli --device GW1N-9C -r 2 --fsFile "$(BASE_DIR)/switches_bitstream.fs"
+switches:
+	cd ~/GOWIN/Programmer/bin/; ./programmer_cli --device GW1N-9C -r 2 --fsFile "$(BASE_DIR)/switches_bitstream.fs"
 
-flash target:
-	cd /l/gowin/Programmer/bin/; ./programmer_cli --device GW1N-9C -r 2 --fsFile "$(BASE_DIR)/group_$(GROUP)/target_$(TARGET).fs"
+flash:
+	cd ~/GOWIN/Programmer/bin/; ./programmer_cli --device GW1N-9C -r 2 --fsFile "$(BASE_DIR)/group_$(GROUP)/target_$(TARGET).fs"
